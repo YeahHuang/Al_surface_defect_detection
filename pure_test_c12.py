@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
-Created on Thu Sep 20 16:16:39 2018
- 
-@ author: herbert-chen
+Edit from training code by @hubert-chen
+Serve as the test.py for 12 classes. 
 '''
 import os
 import time
