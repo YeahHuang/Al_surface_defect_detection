@@ -3,7 +3,7 @@ This includes my code for Alibaba Tianchi competition:  [Al surface defect detec
 
 The competition is aimed at using computer vision techniques to help workers check whether their Al surface products have any defects such as spots, scratches and so on.
 
-### Season1 rank: 96/2972     
+### Season1(clasification) rank: 96/2972   
 ##### What I found very useful:  
 - InceptionV4(pytorch)
 - combine vote(similar to bagging)
@@ -12,12 +12,31 @@ The competition is aimed at using computer vision techniques to help workers che
 - data augmentation(horizontal flip)
 - Ensemble(Xception, Resnet50, InveptionV3)
 ##### Decrease my test acc
-- Gaussian noise
-- Random Rotation(0~8, the larger angle, the worse acc))
+- All other augmentation. especially random rotation(0~8, the larger angle, the worse acc))
 
-### Season2 rank：10/2972     
+### Season2(localization) rank：10/2972     
 ##### What I found very useful:   
 - FasterRcnn&FPN(detectron)
-- Larger resize size(960 for maskrcnn, 800 for fasterrcnn)
+- Larger resize size(960 for maskrcnn, 800 for FasterRcnn)
 - bbox vote
+- Adam instead of SGD
+- lower the thresh
 
+##### Just so so:
+- Mask-Rcnn(keras tf)
+- YoloV3
+- FasterRcnn(tf)
+- Emsemble(FPN, faster-rcnn, mask-rcnn)
+- Soft-nms(since few defects have overlap)
+- Delete mini batch(since spots are super small)
+- Data augmentation( train&test scales,  flip)
+
+##### Decrease my test acc:
+- my own bbox vote( similar to softer-nms,  a combination of iou and confidence)
+- bbox combination ( similar to [this](https://github.com/mirzaevinom/data_science_bowl_2018/blob/master/codes/predict.py) from kaggle big bowl 2018)
+- Use larger size(1920x2560), more data augmentation(5 scales etc.)... 
+
+##### What I didn't have time to try:
+- SNIPER
+- Cascade-rcnn
+- maskrcnn(X152 backbone)
