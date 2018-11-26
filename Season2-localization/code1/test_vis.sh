@@ -1,0 +1,1 @@
+python tools/infer_simple.py --cfg configs/defects/defect_test_aug.yaml --output-dir detectron-result_4_23_47 --image-ext jpg --thresh 0.05 --wts  detectron-output/train/defects_train/generalized_rcnn/model_iter79999.pkl ~/detectron/detectron/datasets/data/defects/test_images
