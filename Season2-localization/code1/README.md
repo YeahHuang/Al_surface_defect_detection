@@ -3,19 +3,18 @@ My code is changed from detectron framework. For more details about detectron, p
 
 Below is an example of detected dirty-point img.
 <div align="center">
-  <img src="demo/output/dirty_point.jpg" width="700px" />
+  <img src="demo/output/dirty_point.png" width="700px" />
   <p>Example defect(dirty point) output.</p>
 </div>
-
+<div align="center">
+  <img src="demo/output/non_conducting.png" width="700px" />
+  <p>Example defect(non-conducting) output.</p>
+</div>
 
 # Detectron
 
 Detectron is Facebook AI Research's software system that implements state-of-the-art object detection algorithms, including [Mask R-CNN](https://arxiv.org/abs/1703.06870). It is written in Python and powered by the [Caffe2](https://github.com/caffe2/caffe2) deep learning framework.
 
-<div align="center">
-  <img src="demo/output/dirty_point.jpg" width="700px" />
-  <p>Example defect(dirty point) output.</p>
-</div>
 
 ## License
 
