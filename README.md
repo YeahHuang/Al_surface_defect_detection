@@ -28,8 +28,9 @@ The competition is aimed at using computer vision techniques to help workers che
 - FasterRcnn(tf)
 - Emsemble(FPN, faster-rcnn, mask-rcnn)
 - Soft-nms(since few defects have overlap)
+- bbox-vote strategy(ID, AVG, IOU_AVG)
 - Delete mini batch(since spots are super small)
-- Data augmentation( train&test scales,  flip)
+- Data augmentation( train&test scales,  flip, small rotation)
 
 ##### Decrease my test acc:
 - my own bbox vote( similar to softer-nms,  a combination of iou and confidence)
