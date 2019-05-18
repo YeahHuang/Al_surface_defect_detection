@@ -42,7 +42,7 @@ The competition is aimed at using computer vision techniques to help workers che
 - Cascade-rcnn
 - maskrcnn(X152 backbone)
 
-####Possible useful links:
+#### Possible useful links:
 - [Official discussion forum]( https://tianchi.aliyun.com/forum/?spm=5176.12281976.0.0.555e2881eM6ncv#raceId=231682)
 - [DCN github link](https://github.com/msracver/Deformable-ConvNets)
 - [1st place's article sharing](https://zhuanlan.zhihu.com/p/50548998)
